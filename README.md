@@ -39,28 +39,7 @@ Meal "is composed of" one Hamburger, one Drink, and one Side
 Hamburger "is composed of" multiple Extras (if allowed)
  
   UML Diagram
-
-+-------------------+      +-------------------+ 
-| Meal              |      | Hamburger         |
-+-------------------+      +-------------------+ 
-| - mealID          |      | - type            |
-| - price           |1     | - basePrice       |
-| + addItem()       | *    | + addExtra()      |
-| + calculatePrice()|      | + calculatePrice()|  
-| + getDescription()|      +-------------------+     
-+-------------------+   
-                      +---------------+     
-                      |     Item      |
-                      +---------------+
-                      | - name        |
-                      | - description |
-                      | - price       |
-                      +---------------+
-                            ^         ^           ^
-                            |         |           |
-                +-----------+  +-----------+ +------------+
-                |  Drink    |  |  Side     | |  Extra     | 
-                +-----------+  +-----------+ +------------+  
-
+![](C:\Users\User\Desktop\1.png)
+ 
 
 
