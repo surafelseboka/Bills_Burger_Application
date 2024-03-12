@@ -1,4 +1,4 @@
 package billsBurgerApplication;
 
-public class Extra {
+public class Extra extends Item {
 }

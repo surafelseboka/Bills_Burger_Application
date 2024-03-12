@@ -1,4 +1,5 @@
 package billsBurgerApplication;
 
-public class Drink {
+public class Drink extends Item{
+
 }
