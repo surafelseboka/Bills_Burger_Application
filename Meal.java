@@ -15,7 +15,7 @@ public class Meal {
         return 0.0;
     }
 
-    public void getDescription(){
+    public void getMealDescription(){
         //print the meal description
     }
 }
