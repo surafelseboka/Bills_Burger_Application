@@ -34,7 +34,7 @@ public class HamBurger  {
   }
 
   public double toppingPrice(String burgerType){
-        return topping.calculateToppingPrice(burgerType);
+        return topping.calculateAddOnPrice(burgerType);
   }
 
   public static HamBurger hamBurger(String burgerType, String size){
