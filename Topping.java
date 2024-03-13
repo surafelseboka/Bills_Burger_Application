@@ -11,7 +11,7 @@ public class Topping  {
         Scanner scanner = new Scanner(System.in);
 
         if (burgerType.equals("R"))
-            System.out.println("Add on items are not applicable for a regular Economy Burger");
+            System.out.println("Add on items are not applicable for a Regular Economy Burger");
         else{
             System.out.println("You can select up to 5 items listed below: " + "\n" +
                     "O -> Onion = 0.50 ¢ " + "\n" +
@@ -48,6 +48,7 @@ public class Topping  {
                      case "O", "C","T","L","M" -> toppingPrice += 0.50;
                      default -> System.out.println("You have added " + addOn);
                  }
+                System.out.println("You have added " + addOn);
             }
         }
         return toppingPrice;
