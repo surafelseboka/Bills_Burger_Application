@@ -23,16 +23,18 @@ public class Drink{
                 drink_type.equals("Large") ? drink_price += 4.50: -1;
         setDrink_price(drink_price);
     }
-
-    public static Drink drink(String drink_type, String drink_size){
-        return  switch(drink_type.toUpperCase().charAt(0)){
-            case 'C' -> new Coke(drink_type,drink_size);
-            case 'P' -> new Pepsi(drink_type, drink_type);
-            case 's' -> new SevenUp(drink_type, drink_size);
-            default -> new Drink(drink_type, drink_size);
-        };
+    public enum DrinkType{
+        COKE,
+        PEPSI,
+        SEVENUP
     }
 
-
-
+    public static Drink drink(DrinkType drinkType, String drink_size){
+        switch (drinkType){
+            case COKE: return new Coke(drinkType.name(), drink_size);
+            case PEPSI:return new Pepsi(drinkType.name(), drink_size);
+            case SEVENUP:return new SevenUp(drinkType.name(), drink_size);
+            default:return new Drink(drinkType.name(), drink_size);
+        }
+    }
 }

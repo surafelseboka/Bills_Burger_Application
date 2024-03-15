@@ -22,9 +22,7 @@ public class HamBurger  {
     public void setPrice(double basePrice){
         this.basePrice = basePrice;
     }
-    public void addExtra(){
 
-    }
 
   public void calculatePrice(){
         basePrice = size.equals("Small") ? basePrice += 10 :
@@ -36,14 +34,19 @@ public class HamBurger  {
   public double toppingPrice(String burgerType){
         return topping.calculateAddOnPrice(burgerType);
   }
+    public enum BurgerType {
+        REGULAR,
+        CHEESE,
+        VEGGIE
+    }
 
-  public static HamBurger hamBurger(String burgerType, String size){
-        return  switch (burgerType.toUpperCase().charAt(0)){
-            case 'R' -> new RegularBurger(burgerType,size);
-            case 'C' -> new CheeseBurger(burgerType, size);
-            case 'V' -> new VeggieBurger(burgerType, size);
-            default -> new HamBurger(burgerType, size);
-        };
-  }
+    public static HamBurger hamBurger(BurgerType burgerType, String size) {
+        switch (burgerType) {
+            case REGULAR: return new RegularBurger(burgerType.name(), size);
+            case CHEESE: return new CheeseBurger(burgerType.name(), size);
+            case VEGGIE: return new VeggieBurger(burgerType.name(), size);
+            default: return new HamBurger(burgerType.name(), size);
+        }
+    }
 
 }

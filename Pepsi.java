@@ -2,7 +2,7 @@ package billsBurgerApplication;
 
 public class Pepsi extends Drink {
     public Pepsi(String drink_type, String drink_size) {
-        super(drink_type,drink_size);
+        super(drink_type, drink_size);
     }
 
     @Override
