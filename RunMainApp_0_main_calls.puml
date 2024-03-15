@@ -1,0 +1,533 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "billsBurgerApplication.RunMainApp#main(String[])",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "billsBurgerApplication",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": false,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": false,
+    "cutConstructors": false
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "billsBurgerApplication.RunMainApp",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_2116003409 { 
+   	label=billsBurgerApplication
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1208162859 { 
+   	label=CheeseBurger
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   CheeseBurger2116003409XXXCheeseBurger2013066710[
+	label="+ CheeseBurger()"
+	style=filled
+	fillcolor=white
+	tooltip="CheeseBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+CheeseBurger2116003409XXXcalculatePrice0[
+	label="+ calculatePrice()"
+	style=filled
+	fillcolor=white
+	tooltip="CheeseBurger
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1229003178 { 
+   	label=Side
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Side2116003409XXXcalculateAddOnPrice1808118735[
+	label="+ calculateAddOnPrice()"
+	style=filled
+	fillcolor=white
+	tooltip="Side
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1229473851 { 
+   	label=Coke
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Coke2116003409XXXCoke2013066710[
+	label="+ Coke()"
+	style=filled
+	fillcolor=white
+	tooltip="Coke
+
+null"
+	fontcolor=darkgreen
+];
+
+Coke2116003409XXXcalculateDrinkPrice0[
+	label="+ calculateDrinkPrice()"
+	style=filled
+	fillcolor=white
+	tooltip="Coke
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1264737833 { 
+   	label=SevenUp
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   SevenUp2116003409XXXSevenUp2013066710[
+	label="+ SevenUp()"
+	style=filled
+	fillcolor=white
+	tooltip="SevenUp
+
+null"
+	fontcolor=darkgreen
+];
+
+SevenUp2116003409XXXcalculateDrinkPrice0[
+	label="+ calculateDrinkPrice()"
+	style=filled
+	fillcolor=white
+	tooltip="SevenUp
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1837826468 { 
+   	label=RunMainApp
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   RunMainApp2116003409XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="RunMainApp
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1861651736 { 
+   	label=Topping
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Topping2116003409XXXcalculateAddOnPrice1808118735[
+	label="+ calculateAddOnPrice()"
+	style=filled
+	fillcolor=white
+	tooltip="Topping
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_224495228 { 
+   	label=InputValidation
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   InputValidation2116003409XXXisValidDrinkName1808118735[
+	label="+ isValidDrinkName()"
+	style=filled
+	fillcolor=white
+	tooltip="InputValidation
+
+null"
+	fontcolor=darkgreen
+];
+
+InputValidation2116003409XXXisValidSideName1808118735[
+	label="+ isValidSideName()"
+	style=filled
+	fillcolor=white
+	tooltip="InputValidation
+
+null"
+	fontcolor=darkgreen
+];
+
+InputValidation2116003409XXXisValidSize1808118735[
+	label="+ isValidSize()"
+	style=filled
+	fillcolor=white
+	tooltip="InputValidation
+
+null"
+	fontcolor=darkgreen
+];
+
+InputValidation2116003409XXXisValidType1808118735[
+	label="+ isValidType()"
+	style=filled
+	fillcolor=white
+	tooltip="InputValidation
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_263677678 { 
+   	label=RegularBurger
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   RegularBurger2116003409XXXRegularBurger2013066710[
+	label="+ RegularBurger()"
+	style=filled
+	fillcolor=white
+	tooltip="RegularBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+RegularBurger2116003409XXXcalculatePrice0[
+	label="+ calculatePrice()"
+	style=filled
+	fillcolor=white
+	tooltip="RegularBurger
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_429127030 { 
+   	label=HamBurger
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   HamBurger2116003409XXXHamBurger2013066710[
+	label="+ HamBurger()"
+	style=filled
+	fillcolor=white
+	tooltip="HamBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+HamBurger2116003409XXXHamBurger525608999[
+	label="+ HamBurger()"
+	style=filled
+	fillcolor=white
+	tooltip="HamBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+HamBurger2116003409XXXcalculatePrice0[
+	label="+ calculatePrice()"
+	style=filled
+	fillcolor=white
+	tooltip="HamBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+HamBurger2116003409XXXgetBasePrice0[
+	label="+ getBasePrice()"
+	style=filled
+	fillcolor=white
+	tooltip="HamBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+HamBurger2116003409XXXhamBurger913427180[
+	label="+ hamBurger()"
+	style=filled
+	fillcolor=white
+	tooltip="HamBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+HamBurger2116003409XXXsetPrice1325958191[
+	label="+ setPrice()"
+	style=filled
+	fillcolor=white
+	tooltip="HamBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+HamBurger2116003409XXXtoppingPrice1808118735[
+	label="+ toppingPrice()"
+	style=filled
+	fillcolor=white
+	tooltip="HamBurger
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_500451199 { 
+   	label=VeggieBurger
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   VeggieBurger2116003409XXXVeggieBurger2013066710[
+	label="+ VeggieBurger()"
+	style=filled
+	fillcolor=white
+	tooltip="VeggieBurger
+
+null"
+	fontcolor=darkgreen
+];
+
+VeggieBurger2116003409XXXcalculatePrice0[
+	label="+ calculatePrice()"
+	style=filled
+	fillcolor=white
+	tooltip="VeggieBurger
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_542027641 { 
+   	label=Drink
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Drink2116003409XXXDrink2013066710[
+	label="+ Drink()"
+	style=filled
+	fillcolor=white
+	tooltip="Drink
+
+null"
+	fontcolor=darkgreen
+];
+
+Drink2116003409XXXcalculateDrinkPrice0[
+	label="+ calculateDrinkPrice()"
+	style=filled
+	fillcolor=white
+	tooltip="Drink
+
+null"
+	fontcolor=darkgreen
+];
+
+Drink2116003409XXXdrink899929993[
+	label="+ drink()"
+	style=filled
+	fillcolor=white
+	tooltip="Drink
+
+null"
+	fontcolor=darkgreen
+];
+
+Drink2116003409XXXgetDrink_price0[
+	label="+ getDrink_price()"
+	style=filled
+	fillcolor=white
+	tooltip="Drink
+
+null"
+	fontcolor=darkgreen
+];
+
+Drink2116003409XXXsetDrink_price1325958191[
+	label="+ setDrink_price()"
+	style=filled
+	fillcolor=white
+	tooltip="Drink
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_552729490 { 
+   	label=Pepsi
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Pepsi2116003409XXXPepsi2013066710[
+	label="+ Pepsi()"
+	style=filled
+	fillcolor=white
+	tooltip="Pepsi
+
+null"
+	fontcolor=darkgreen
+];
+
+Pepsi2116003409XXXcalculateDrinkPrice0[
+	label="+ calculateDrinkPrice()"
+	style=filled
+	fillcolor=white
+	tooltip="Pepsi
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+'edges    
+CheeseBurger2116003409XXXCheeseBurger2013066710 -> HamBurger2116003409XXXHamBurger2013066710;
+CheeseBurger2116003409XXXcalculatePrice0 -> HamBurger2116003409XXXsetPrice1325958191;
+Coke2116003409XXXCoke2013066710 -> Drink2116003409XXXDrink2013066710;
+Coke2116003409XXXcalculateDrinkPrice0 -> Drink2116003409XXXsetDrink_price1325958191;
+Drink2116003409XXXcalculateDrinkPrice0 -> Coke2116003409XXXcalculateDrinkPrice0;
+Drink2116003409XXXcalculateDrinkPrice0 -> Drink2116003409XXXsetDrink_price1325958191;
+Drink2116003409XXXcalculateDrinkPrice0 -> Pepsi2116003409XXXcalculateDrinkPrice0;
+Drink2116003409XXXcalculateDrinkPrice0 -> SevenUp2116003409XXXcalculateDrinkPrice0;
+Drink2116003409XXXdrink899929993 -> Coke2116003409XXXCoke2013066710;
+Drink2116003409XXXdrink899929993 -> Drink2116003409XXXDrink2013066710;
+Drink2116003409XXXdrink899929993 -> Pepsi2116003409XXXPepsi2013066710;
+Drink2116003409XXXdrink899929993 -> SevenUp2116003409XXXSevenUp2013066710;
+HamBurger2116003409XXXcalculatePrice0 -> CheeseBurger2116003409XXXcalculatePrice0;
+HamBurger2116003409XXXcalculatePrice0 -> HamBurger2116003409XXXsetPrice1325958191;
+HamBurger2116003409XXXcalculatePrice0 -> RegularBurger2116003409XXXcalculatePrice0;
+HamBurger2116003409XXXcalculatePrice0 -> VeggieBurger2116003409XXXcalculatePrice0;
+HamBurger2116003409XXXhamBurger913427180 -> CheeseBurger2116003409XXXCheeseBurger2013066710;
+HamBurger2116003409XXXhamBurger913427180 -> HamBurger2116003409XXXHamBurger2013066710;
+HamBurger2116003409XXXhamBurger913427180 -> RegularBurger2116003409XXXRegularBurger2013066710;
+HamBurger2116003409XXXhamBurger913427180 -> VeggieBurger2116003409XXXVeggieBurger2013066710;
+HamBurger2116003409XXXtoppingPrice1808118735 -> Topping2116003409XXXcalculateAddOnPrice1808118735;
+Pepsi2116003409XXXPepsi2013066710 -> Drink2116003409XXXDrink2013066710;
+Pepsi2116003409XXXcalculateDrinkPrice0 -> Drink2116003409XXXsetDrink_price1325958191;
+RegularBurger2116003409XXXRegularBurger2013066710 -> HamBurger2116003409XXXHamBurger2013066710;
+RunMainApp2116003409XXXmain1859653459 -> Drink2116003409XXXcalculateDrinkPrice0;
+RunMainApp2116003409XXXmain1859653459 -> Drink2116003409XXXdrink899929993;
+RunMainApp2116003409XXXmain1859653459 -> Drink2116003409XXXgetDrink_price0;
+RunMainApp2116003409XXXmain1859653459 -> HamBurger2116003409XXXHamBurger525608999;
+RunMainApp2116003409XXXmain1859653459 -> HamBurger2116003409XXXcalculatePrice0;
+RunMainApp2116003409XXXmain1859653459 -> HamBurger2116003409XXXgetBasePrice0;
+RunMainApp2116003409XXXmain1859653459 -> HamBurger2116003409XXXhamBurger913427180;
+RunMainApp2116003409XXXmain1859653459 -> HamBurger2116003409XXXtoppingPrice1808118735;
+RunMainApp2116003409XXXmain1859653459 -> InputValidation2116003409XXXisValidDrinkName1808118735;
+RunMainApp2116003409XXXmain1859653459 -> InputValidation2116003409XXXisValidSideName1808118735;
+RunMainApp2116003409XXXmain1859653459 -> InputValidation2116003409XXXisValidSize1808118735;
+RunMainApp2116003409XXXmain1859653459 -> InputValidation2116003409XXXisValidType1808118735;
+RunMainApp2116003409XXXmain1859653459 -> Side2116003409XXXcalculateAddOnPrice1808118735;
+SevenUp2116003409XXXSevenUp2013066710 -> Drink2116003409XXXDrink2013066710;
+SevenUp2116003409XXXcalculateDrinkPrice0 -> Drink2116003409XXXsetDrink_price1325958191;
+VeggieBurger2116003409XXXVeggieBurger2013066710 -> HamBurger2116003409XXXHamBurger2013066710;
+VeggieBurger2116003409XXXcalculatePrice0 -> HamBurger2116003409XXXsetPrice1325958191;
+    
+}
+@enduml
